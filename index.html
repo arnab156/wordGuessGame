@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game -  My favorite Cities in the World!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+    <style>
+                body {
+                background-image: url("assets/images/paris.jpg");
+                background-color: #cccccc;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" style="font-family: 'Eater', cursive;">
+        <h1 class="display-4 text-sm-center" style="color:#7a786f;">GUESS MY FAVORITE CITY</h1>
+
+        <p class= "text-justify text-center text-light"> Game Instruction here! Just guess what is my favorite city. 
+        </p> 
+        <!-- <p class= "text-justify text-center text-danger">If you decide to play with a friend, the first player will be asked to enter four names of your faviorite cities. One of them will be chosen and the second player will be prompted with the number of guesses and remaining letters. Enjoy! </p> -->
+        <div class="row"> 
+            <!-- <div class="col-sm-6" style="background-color: none;"> <button type ="button" id="onePlayer" class ="btn btn-dark btn-lg btn-block"> One Player</button></div>  -->
+            <div class="col-sm-12" style="background-color: none;"> <button  type ="button" id="twoPlayers" class ="btn btn-danger btn-lg btn-block" onclick ="myFunction()">Press here to start guessing</button></div>   
+         </div>
+
+        <div class="row">     
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+                <div  class="col-sm-4 text-sm-center" style="background-color: none; height:50px; text-align: center; font-size: 24px; color: #7a786f;"> Guess my favorite city : </div>
+                <div  class="col-sm-2 text-sm-center" id = "guessWord" style="background-color: #93baf9;">  </div>
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+
+        </div>         
+        <br><br>
+        <div class="row">     
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+                <div  class="col-sm-4 text-sm-center" style="background-color: none; height:50px; text-align: center; font-size: 24px; color: #7a786f;"> Guess remaining: </div>
+                <div  class="col-sm-2 text-sm-center" id = "guessRemain" style="background-color:#f9edc2;">  </div>
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+                <div  class="col-sm-2 text-sm-center" style="background-color: none;"> </div>
+        </div>         
+        <br><br>
+        <div class="row"> 
+        <div  class="col-sm-3 text-sm-center" style="background-color: none;"> </div> 
+        <div  class="col-sm-6 text-sm-center" style="background-color: none;"> <p  class="text-md-center" style="background-color: none;color: #7a786f;"> Letters Played Till Now:</p></div>
+        <div  class="col-sm-3 text-sm-center" style="background-color: none;"> </div>
+        
+
+        <div  class="col-sm-3 text-sm-center" style="background-color: none;"> </div>
+        <div  class="col-sm-6 text-sm-center" style="background-color: none;"> <p  class="text-md-center"id = "status" style="background-color: #f9edc2; height:100px; color: tomato;"> none played yet.</p> </div>
+         <div  class="col-sm-3 text-sm-center" style="background-color: none;"> </div>
+         
+        </div>
+
+
+        <h1 class="display-4 text-sm-center" style="color:white">SCORE</h1>
+        <div class="row"> 
+            <div class="col-sm-4 text-sm-center" ></div>
+            <div class="col-sm-2 text-sm-center" style="color:white; background-color: none; font-size: 30px;"> Wins: </div>
+            <div class="col-sm-2 text-sm-center" style="color:white; background-color: none;font-size: 30px;">Losses: </div>
+            <div class="col-sm-4 text-sm-center" ></div>
+
+            <div class="col-sm-4 text-sm-center" ></div>
+            <div id="win" class="col-sm-2 text-sm-center" style="background-color: #f9edc2; height: 55px; font-size: 36px;">  0 </div>
+            <div id="loss" class="col-sm-2 text-sm-center" style="background-color: #93baf9;font-size: 36px; color: tomato"> 0 </div>
+            <div class="col-sm-4 text-sm-center" ></div>
+         </div>   
+    </div>
+
+<p> 
+   
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</p>
+  </body>
+
+</html>
