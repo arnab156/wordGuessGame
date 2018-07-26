@@ -1,7 +1,7 @@
 
       // Created an empty array to add all your words that the opponent might get. 
     //   var citiesList = [];
-      var preCitiesList = ["barcelona","amsterdam", "kolkata", "newdelhi", "florence", "sanfrancisco", "newyork","helsinki","vacouver","toronto", "chicago","singapore", "kyoto"];
+      var preCitiesList = ["barcelona","amsterdam", "kolkata", "newdelhi", "florence", "sanfrancisco", "newyork","helsinki","vacouver","toronto", "chicago","singapore", "kyoto", "reykjavik", "ulaanbaatar", "addisababa","havana","buenosaires","abuja","istanbul", "melbourne" ];
       
       var input;
       var city;
@@ -15,7 +15,7 @@ function updateScore() {
 
 function myFunction() {
     var preRandomCity = preCitiesList[Math.floor(Math.random() * preCitiesList.length)];   
-    console.log(preRandomCity); 
+    // console.log(preRandomCity); 
     var answerArray = [];
     
     for (var i = 0; i < preRandomCity.length; i++) {
@@ -44,12 +44,12 @@ function myFunction() {
                     document.getElementById("guessWord").innerText = answerArray.join(" ");
                     }
                 var answerArrayString = answerArray.join('');
-                console.log(answerArrayString) ;
+                // console.log(answerArrayString) ;
                 
-                console.log(answerArray) ;
+                // console.log(answerArray) ;
                 var preRandomArray = preRandomCity.split(',');
-                console.log(preRandomArray) ;
-                console.log(preRandomCity) ;
+                // console.log(preRandomArray) ;
+                // console.log(preRandomCity) ;
                 if (answerArrayString == preRandomCity) {
                         alert ("you are right! My favorite city is "+ preRandomCity);
                         win++;
