@@ -15,7 +15,7 @@ function updateScore() {
 
 function myFunction() {
     var preRandomCity = preCitiesList[Math.floor(Math.random() * preCitiesList.length)];   
-    // console.log(preRandomCity); 
+    
     var answerArray = [];
     
     for (var i = 0; i < preRandomCity.length; i++) {
