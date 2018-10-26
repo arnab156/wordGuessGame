@@ -14,3 +14,9 @@ Lets play "GUESS MY FAVORITE CITY"
 5. Everytime you press a letter present in the name of the city that you have to guess, the letters will reveal themselves. If there are more than one of the same letter, both will be revealed to you. yay!
 
 6. Keep playing since my favorite cities keep changing based on my mood.
+
+--------------------------------------------------------  
+
+Technologies used:
+
+Javascript, HTML and CSS!
